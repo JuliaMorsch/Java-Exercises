@@ -1,14 +1,11 @@
 package lista_construtores_heranca;
 
-public class Microondas {
+public class Microondas extends Eletrodomestico {
     
-    private String modelo;
-    private String fabricante;
     private double litros;
     
     public Microondas(String modelo, String fabricante, double litros) {
-        this.modelo = modelo;
-        this.fabricante = fabricante;
+        super(modelo, fabricante);
         this.litros = litros;
     }
 

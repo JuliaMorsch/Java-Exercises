@@ -1,14 +1,11 @@
 package lista_construtores_heranca;
 
-public class LavaRoupa {
-    
-    private String modelo;
-    private String fabricante;
+public class LavaRoupa extends Eletrodomestico{
+
     private double quilos;
     
     public LavaRoupa(String modelo, String fabricante, double quilos) {
-        this.modelo = modelo;
-        this.fabricante = fabricante;
+        super(modelo, fabricante);
         this.quilos = quilos;
     }
 
